@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="All In One logo: a globe with app icons and a person downloading on a phone">
+  <defs>
+    <linearGradient id="g-globe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="g-ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#7c3aed" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1e1b4b" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <!-- Globe -->
+  <g filter="url(#soft)">
+    <circle cx="160" cy="125" r="82" fill="url(#g-globe)"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2.2">
+    <ellipse cx="160" cy="125" rx="82" ry="30"/>
+    <ellipse cx="160" cy="125" rx="40" ry="82"/>
+    <line x1="160" y1="43" x2="160" y2="207"/>
+    <line x1="78" y1="125" x2="242" y2="125"/>
+  </g>
+  <path d="M104 80c14-8 30-6 38 4 6 8-2 16-12 18-10 2-14 10-8 18 5 8-4 14-14 8-10-6-14-22-4-48z" fill="#fff" fill-opacity=".22"/>
+  <path d="M186 138c12-4 26 2 30 12 3 8-6 16-16 14-8-2-12 6-18 4-8-4-6-24 4-30z" fill="#fff" fill-opacity=".22"/>
+
+  <!-- App icons orbiting the globe (generic symbols, not brand logos) -->
+  <g filter="url(#soft)">
+    <!-- Video (play) -->
+    <rect x="62" y="38" width="48" height="48" rx="13" fill="#ef4444"/>
+    <path d="M80 50l20 12-20 12z" fill="#fff"/>
+    <!-- Photo (camera) -->
+    <rect x="212" y="30" width="48" height="48" rx="13" fill="#ec4899"/>
+    <rect x="222" y="44" width="28" height="20" rx="5" fill="none" stroke="#fff" stroke-width="3"/>
+    <circle cx="236" cy="54" r="5" fill="#fff"/>
+    <!-- Short video (music note) -->
+    <rect x="34" y="128" width="48" height="48" rx="13" fill="#0f172a"/>
+    <path d="M62 140v20a6 6 0 1 1-4-5.6V146l12-3v8" fill="none" stroke="#22d3ee" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Social (chat bubble) -->
+    <rect x="240" y="124" width="48" height="48" rx="13" fill="#2563eb"/>
+    <path d="M252 140h24a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-12l-8 6v-6h-4a4 4 0 0 1-4-4v-10a4 4 0 0 1 4-4z" fill="#fff"/>
+  </g>
+
+  <!-- Ground glow -->
+  <ellipse cx="160" cy="292" rx="120" ry="9" fill="url(#g-ground)"/>
+
+  <!-- Dashed download path from globe down to the phone -->
+  <path d="M160 207 C 160 238, 222 232, 236 262" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <!-- Download arrow badge -->
+  <g transform="translate(160 232)">
+    <circle r="17" fill="#22c55e" filter="url(#soft)"/>
+    <path d="M0 -8v11M-6 -1l6 7 6-7" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-8 10h16" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person standing far away, holding a phone -->
+  <g transform="translate(236 252)">
+    <circle cx="0" cy="-6" r="5.5" fill="#1e293b"/>
+    <path d="M-6 0h12l2 18h-16z" fill="#334155"/>
+    <path d="M-5 18v12M5 18v12" stroke="#1e293b" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M6 4l9-3" stroke="#334155" stroke-width="3.4" stroke-linecap="round"/>
+    <rect x="13" y="-7" width="8" height="14" rx="2" fill="#22d3ee" stroke="#0f172a" stroke-width="1.4"/>
+    <path d="M17 -2v5M14.8 1l2.2 2.4L19.2 1" fill="none" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
